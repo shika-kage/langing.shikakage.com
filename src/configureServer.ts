@@ -28,8 +28,8 @@ if(serverOptions) {
 app.use(cors());
 app.use(express.json({ extended: true }));
 app.get('/additional-info', (_, res) => res.status(200).json(JSON.parse(fs.readFileSync(path.resolve(__dirname, '..', 'config', 'intial-data.json')))));
-app.use('/', express.static(path.join(__dirname, 'public')));
-app.get('*', (_, res) => res.sendFile(path.resolve(__dirname, 'public', 'index.html')));
+app.use('/', express.static(path.join(__dirname, 'client')));
+app.get('*', (_, res) => res.sendFile(path.resolve(__dirname, 'client', 'index.html')));
 
 export {
     server,
