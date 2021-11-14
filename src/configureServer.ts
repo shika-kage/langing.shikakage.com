@@ -26,7 +26,6 @@ if(serverOptions) {
 
 app.use(cors());
 app.use(express.json({ extended: true }));
-app.use('/public/documentation', express.static(path.join(__dirname, 'com.shika.kage.documentation.pdf')));
 app.use('/', express.static(path.join(__dirname, 'client')));
 app.get('*', (_, res) => res.sendFile(path.resolve(__dirname, 'client', 'index.html')));
 

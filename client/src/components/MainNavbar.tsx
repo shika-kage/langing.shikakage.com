@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 
 import { ITranslateProps } from '@/interfaces/Components';
 import { LanguageDropDown } from '@components/LanguageDropDown';
-import {Link} from "react-router-dom";
+import Documentation from '../assets/docs/documentation.pdf';
 
 export const MainNavbar = withTranslation()((props: ITranslateProps) => {
 
@@ -47,7 +48,7 @@ export const MainNavbar = withTranslation()((props: ITranslateProps) => {
                 <div className='menu__side'>
                     <ul className='links'>
                         <li><Link to='/'>{ props.t('menu_item_home') }</Link></li>
-                        <li><Link to='/documentation'>{ props.t('menu_item_litepaper') }</Link></li>
+                        <li><a href={Documentation}>{ props.t('menu_item_litepaper') }</a></li>
                         <li className='link_dropped'>
                             <span>{ props.t('menu_item_token') }</span>
                             <img src={require('@assets/imgs/icons/arrow_up.svg').default} />
@@ -61,8 +62,8 @@ export const MainNavbar = withTranslation()((props: ITranslateProps) => {
                             <img src={require('@assets/imgs/icons/arrow_up.svg').default} />
                             <ul className='sub_links'>
                                 <li><Link to="/devs">{ props.t('menu_sub_item_community_devs') }</Link></li>
-                                <li>{ props.t('menu_sub_item_community_telegram') }</li>
-                                <li>{ props.t('menu_sub_item_community_twitter') }</li>
+                                <li><a href='https://t.me/ShikaKage'>{ props.t('menu_sub_item_community_telegram') }</a></li>
+                                <li><a href='https://twitter.com/Shika_Kage'>{ props.t('menu_sub_item_community_twitter') }</a></li>
                             </ul>
                         </li>
                         <li>{ props.t('menu_item_skg') }</li>

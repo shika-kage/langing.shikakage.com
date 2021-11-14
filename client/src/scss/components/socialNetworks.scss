@@ -4,14 +4,14 @@
   justify-content: center;
   align-items: center;
 
-  img {
+  a > img {
     width: 42px;
     height: 42px;
     margin: 0 0 0 15px;
     cursor: pointer;
+  }
 
-    &:first-child {
-      margin: 0;
-    }
+  a:first-child > img {
+    margin: 0;
   }
 }

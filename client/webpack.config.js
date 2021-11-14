@@ -87,7 +87,7 @@ module.exports = {
                 use: cleanCssLoader(isDev)
             },
             {
-                test: /\.(png|jpg|svg|gif|ttf|woff|woff2|eot)$/,
+                test: /\.(png|jpg|svg|gif|ttf|woff|woff2|eot|pdf)$/,
                 use: ['file-loader']
             },
             {

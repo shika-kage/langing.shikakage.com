@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { SocialNetworks } from '@components/SocialNetworks';
 import { withTranslation } from 'react-i18next';
 import { ITranslateProps } from '@/interfaces/Components';
+import Documentation from "@assets/docs/documentation.pdf";
 
 export const Footer = withTranslation()((props: ITranslateProps) => (
     <footer>
@@ -10,10 +11,10 @@ export const Footer = withTranslation()((props: ITranslateProps) => (
             <div className='pre-footer__content'>
                 <ul>
                     <li>
-                        <Link to="/">{ props.t('footer_link_home') }</Link>
+                        <Link to='/'>{ props.t('menu_item_home') }</Link>
                     </li>
                     <li>
-                        <Link to="/">{ props.t('footer_link_litepaper') }</Link>
+                        <a href={Documentation}>{ props.t('footer_link_litepaper') }</a>
                     </li>
                     <li>
                         <Link to="/">{ props.t('footer_link_poocoin_chart') }</Link>
