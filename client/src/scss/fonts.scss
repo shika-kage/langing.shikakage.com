@@ -1,0 +1,5 @@
+@import 'mixins/includeFont';
+
+@include includeFont('Girloy', 'Regular');
+@include includeFont('Girloy', 'Bold');
+@include includeFont('Girloy', 'Semibold');

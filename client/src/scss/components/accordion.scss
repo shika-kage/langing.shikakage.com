@@ -1,0 +1,49 @@
+.accordion {
+  background-color: $primary;
+  padding: 20px;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 27px;
+      height: 15px;
+      transition: transform .5s;
+      transform: rotate(180deg);
+    }
+  }
+
+  &__header-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  &__title {
+    font: $roadMapTitleFont;
+  }
+
+  &__opened {
+    transform: rotate(360deg) !important;
+  }
+
+  &__content {
+    ul > li {
+      font: $roadMapContentFont;
+      margin: 0 0 20px 0;
+      text-align: left;
+
+      &:first-child {
+        margin: 20px 0 20px 0;
+      }
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}

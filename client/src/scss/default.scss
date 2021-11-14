@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  border: 0;
+  box-sizing: border-box;
+  font: 16px 'Girloy Regular';
+}
+
+body {
+  background-color: $bodyBackground;
+  color: #FFF;
+  background-image: url('@assets/imgs/effect.png');
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #FFF;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FFF;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+  cursor: pointer !important;
+}
+
+img {
+  pointer-events: none;
+  user-select: none;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show-flex {
+  display: flex !important;
+}
+
+main {
+  margin: 60px auto 0 auto;
+  max-width: 85%;
+  width: 100%;
+
+  @media (max-width: 840px) {
+    max-width: 95%;
+  }
+}
+
+h2 {
+  font: $defaultSectionTitleFont;
+  text-transform: uppercase;
+  margin: 25px 0;
+}
+
+h3 {
+  font: $defaultSubTitleFont;
+}
+
+p {
+  text-align: left;
+}
+
+.title-line {
+  width: 340px;
+  height: 6px;
+  background: $titleLineGradient;
+
+  @media (max-width: 360px) {
+    width: 100%;
+  }
+
+  &__short {
+    width: 150px;
+    height: 6px;
+    background: $titleLineGradient;
+  }
+
+  &__accordion {
+    width: 62px;
+    height: 6px;
+    background: $titleLineGradient;
+  }
+
+  &__full {
+    width: 100%;
+    height: 6px;
+    background: $titleLineGradient;
+  }
+}
+
+.gradient-border {
+  background: $borderGradient;
+  padding: 2px;
+}
