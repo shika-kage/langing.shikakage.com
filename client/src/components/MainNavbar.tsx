@@ -46,8 +46,8 @@ export const MainNavbar = withTranslation()((props: ITranslateProps) => {
                 </div>
                 <div className='menu__side'>
                     <ul className='links'>
-                        <li><Link to="/">{ props.t('menu_item_home') }</Link></li>
-                        <li>{ props.t('menu_item_litepaper') }</li>
+                        <li><Link to='/'>{ props.t('menu_item_home') }</Link></li>
+                        <li><Link to='/documentation'>{ props.t('menu_item_litepaper') }</Link></li>
                         <li className='link_dropped'>
                             <span>{ props.t('menu_item_token') }</span>
                             <img src={require('@assets/imgs/icons/arrow_up.svg').default} />

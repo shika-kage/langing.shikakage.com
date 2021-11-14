@@ -79,7 +79,7 @@ const HomeComponent = withTranslation()((props: ITranslateProps) => {
                         <p>{ props.t('tokenomics_content_p2') }</p>
                         <div className='tokenomics__secondary-percentages'>
                             <div className='tokenomics__secondary-percentage'>
-                                <span>2%</span>
+                                <span>4%</span>
                                 <p>{ props.t('tokenomics_secondary_percentage_1') }</p>
                             </div>
                             <div className='tokenomics__secondary-percentage'>

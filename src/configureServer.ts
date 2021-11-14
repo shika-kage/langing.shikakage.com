@@ -1,7 +1,6 @@
 const cors = require('cors');
 const path = require('path');
 const express = require('express');
-const fs = require('fs');
 
 import config from 'config';
 const httpPort = config.get('port.http');
@@ -27,7 +26,7 @@ if(serverOptions) {
 
 app.use(cors());
 app.use(express.json({ extended: true }));
-app.get('/additional-info', (_, res) => res.status(200).json(JSON.parse(fs.readFileSync(path.resolve(__dirname, '..', 'config', 'intial-data.json')))));
+app.use('/public/documentation', express.static(path.join(__dirname, 'com.shika.kage.documentation.pdf')));
 app.use('/', express.static(path.join(__dirname, 'client')));
 app.get('*', (_, res) => res.sendFile(path.resolve(__dirname, 'client', 'index.html')));
 

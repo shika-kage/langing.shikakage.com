@@ -9,6 +9,10 @@ const baseRoutes: React.FC = () => (
     <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/devs' exact component={Devs} />
+        <Route path='/documentation' component={(): any => {
+            window.location.href = `${location.origin}/public/documentation`;
+            return null;
+        }}/>
         <Redirect to='/' />
     </Switch>
 );
