@@ -5,6 +5,7 @@ import { withTranslation } from 'react-i18next';
 import { ITranslateProps } from '@/interfaces/Components';
 import { LanguageDropDown } from '@components/LanguageDropDown';
 import Documentation from '../assets/docs/documentation.pdf';
+import Audit from '../assets/docs/audit.pdf';
 
 export const MainNavbar = withTranslation()((props: ITranslateProps) => {
 
@@ -55,6 +56,7 @@ export const MainNavbar = withTranslation()((props: ITranslateProps) => {
                             <ul className='sub_links'>
                                 <li>{ props.t('menu_sub_item_token_about_coin') }</li>
                                 <li>{ props.t('menu_sub_item_token_tokenomics') }</li>
+                                <li><a href={Audit}>{ props.t('menu_sub_item_audit') }</a></li>
                             </ul>
                         </li>
                         <li className='link_dropped'>
