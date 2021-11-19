@@ -9,7 +9,7 @@ export const Welcome = withTranslation()((props: ITranslateProps) => (
             <div className='welcome__content'>
                 <div className='welcome__info'>
                     <span>{ props.t('welcome_info_block') }</span>
-                    <span>0xC1D8b45E9cdA7b16B1d2BCFab5AEa5DB4176F29B</span>
+                    <span>0xC80aBF95701973a58e2a5098B7177594D4fD73e3</span>
                 </div>
                 <img src={require('@assets/imgs/welcome_coin.svg').default} />
             </div>
