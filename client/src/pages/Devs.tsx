@@ -23,6 +23,18 @@ const DevsComponent = withTranslation()((props: ITranslateProps) => {
                     <div className='devs__items'>
                         <div className='devs__col'>
                             <div className='devs__item'>
+                                <img src={require('@assets/imgs/devs/marina.svg').default} />
+                                <div className='devs__info'>
+                                    <div className='title-line__full' />
+                                    <h3>Marina
+                                        <a href='https://twitter.com/MarinaKage'>
+                                            <img src={require('@assets/imgs/sn/twitter.svg').default} alt='twitter' />
+                                        </a>
+                                    </h3>
+                                    <span>{ props.t('devs_marina_hint') }</span>
+                                </div>
+                            </div>
+                            <div className='devs__item'>
                                 <img src={require('@assets/imgs/devs/tim.svg').default} />
                                 <div className='devs__info'>
                                     <div className='title-line__full' />
@@ -30,6 +42,8 @@ const DevsComponent = withTranslation()((props: ITranslateProps) => {
                                     <span>{ props.t('devs_tim_hint') }</span>
                                 </div>
                             </div>
+                        </div>
+                        <div className='devs__col'>
                             <div className='devs__item'>
                                 <img src={require('@assets/imgs/devs/nastya.svg').default} />
                                 <div className='devs__info'>
@@ -38,22 +52,12 @@ const DevsComponent = withTranslation()((props: ITranslateProps) => {
                                     <span>{ props.t('devs_nastya_hint') }</span>
                                 </div>
                             </div>
-                        </div>
-                        <div className='devs__col'>
                             <div className='devs__item'>
                                 <img src={require('@assets/imgs/devs/andrey.svg').default} />
                                 <div className='devs__info'>
                                     <div className='title-line__full' />
                                     <h3>Andrey</h3>
                                     <span>{ props.t('devs_andrey_hint') }</span>
-                                </div>
-                            </div>
-                            <div className='devs__item'>
-                                <img src={require('@assets/imgs/devs/marina.svg').default} />
-                                <div className='devs__info'>
-                                    <div className='title-line__full' />
-                                    <h3>Marina</h3>
-                                    <span>{ props.t('devs_marina_hint') }</span>
                                 </div>
                             </div>
                         </div>
