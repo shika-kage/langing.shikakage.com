@@ -48,7 +48,11 @@ const DevsComponent = withTranslation()((props: ITranslateProps) => {
                                 <img src={require('@assets/imgs/devs/nastya.svg').default} />
                                 <div className='devs__info'>
                                     <div className='title-line__full' />
-                                    <h3>Nastya</h3>
+                                    <h3>Nastya
+                                        <a href='https://twitter.com/nastya_fauner'>
+                                            <img src={require('@assets/imgs/sn/twitter.svg').default} alt='twitter' />
+                                        </a>
+                                    </h3>
                                     <span>{ props.t('devs_nastya_hint') }</span>
                                 </div>
                             </div>
@@ -56,7 +60,11 @@ const DevsComponent = withTranslation()((props: ITranslateProps) => {
                                 <img src={require('@assets/imgs/devs/andrey.svg').default} />
                                 <div className='devs__info'>
                                     <div className='title-line__full' />
-                                    <h3>Andrey</h3>
+                                    <h3>Andrey
+                                        <a href='https://twitter.com/JustAndrey_'>
+                                            <img src={require('@assets/imgs/sn/twitter.svg').default} alt='twitter' />
+                                        </a>
+                                    </h3>
                                     <span>{ props.t('devs_andrey_hint') }</span>
                                 </div>
                             </div>

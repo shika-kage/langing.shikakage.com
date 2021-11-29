@@ -17,6 +17,16 @@ const HomeComponent = withTranslation()((props: ITranslateProps) => {
         <>
             <MainNavbar />
             <Welcome />
+            <section className='about-meta-coin'>
+                <div className='container'>
+                    <div className='about-meta-coin__content'>
+                        <div className='title-line' />
+                        <h2>{ props.t('about_meta_coin_title') }</h2>
+                        <p>{ props.t('about_meta_coin_content') }</p>
+                        <div className='title-line' />
+                    </div>
+                </div>
+            </section>
             <section className='about-coin'>
                 <div className='container'>
                     <div className='about-coin__content'>
@@ -116,7 +126,10 @@ const HomeComponent = withTranslation()((props: ITranslateProps) => {
                         <span>{ props.t('links_hint') }</span>
                         <div className='links__items'>
                             <img src={require('@assets/imgs/links/uniswap.png').default} />
-                            <img src={require('@assets/imgs/links/pancakeswap.png').default} />
+                            <img
+                                src={require('@assets/imgs/links/pancakeswap.png').default}
+                                onClick={() => window.open('https://exchange.pancakeswap.finance/#/swap?inputCurrency=0xC80aBF95701973a58e2a5098B7177594D4fD73e3')}
+                            />
                             <img src={require('@assets/imgs/links/coingecko.png').default} />
                         </div>
                     </div>
